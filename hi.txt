@@ -1,1 +1,10 @@
 API Key = efa6aa6cb7278762054859c476be335b
+
+const BASE_URL = "https://api.themoviedb.org/3";
+
+
+const getMovie = async (movieId) => { 
+  // Returns a movie with id of movieId 
+  const req = await fetch(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}`); 
+  const res = await req.json();
+  return res;};
