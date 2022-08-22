@@ -5,7 +5,6 @@ class CreateUsers < ActiveRecord::Migration[7.0]
       t.string :last_name
       t.string :bio
       t.string :user_image
-      t.integer :user_movie_id
 
       t.timestamps
     end
